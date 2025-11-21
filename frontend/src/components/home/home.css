@@ -1,0 +1,45 @@
+.home {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
+.home-heading {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search + Filter section */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Search bar */
+.filters input {
+  width: 250px;
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Dropdown */
+.filters select {
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 14px;
+  background: white;
+}
+
+/* Product grid */
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔥 FIXED NAVBAR */
+.navContainer {
+    position: fixed;            /* Makes navbar stay on screen while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;                /* Full width */
+
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    align-items: center;
+
+    background-color: black;
+    color: rgb(252, 250, 250);
+    font-size: large;
+
+    padding: 15px 0;
+
+    box-shadow: 0px 1px 10px 0px rgb(172, 249, 120);
+
+    z-index: 9999;              /* Keeps navbar above all content */
+}
+
+/* 🟢 Prevent content hiding behind navbar */
+body {
+    padding-top: 80px !important;  
+}
+
+h2 {
+    margin-left: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    font-size: 1.03em;
+    color: rgb(106, 169, 242);
+}
+
+.logout {
+    margin-left: 50%;
+}

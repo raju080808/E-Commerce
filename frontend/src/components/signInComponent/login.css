@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fullscreen background */
+.loginContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Reduce brightness for better readability */
+  filter: brightness(65%);
+
+  /* Center everything */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login box */
+.loginContainer form {
+  width: 340px;
+  padding: 28px 25px;
+
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+
+  /* Make form bright even though background is dimmed */
+  filter: brightness(100%);
+}
+
+/* Heading */
+.loginContainer h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+/* Labels */
+.loginContainer label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Input fields */
+.loginContainer input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+
+  font-size: 14px;
+
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.loginContainer input:focus {
+  outline: none;
+  border-color: #6a5acd;
+}
+
+/* Login button */
+.loginContainer button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+
+  background: #6a5acd;
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginContainer button:hover {
+  background: #5b49c1;
+}
+
+.loginContainer button:disabled {
+  background: #9d92e6;
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+/* Bottom text */
+.loginContainer p {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.loginContainer p span {
+  color: blue;
+  font-weight: 600;
+  cursor: pointer;
+}

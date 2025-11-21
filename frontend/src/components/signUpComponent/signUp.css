@@ -1,0 +1,87 @@
+/* Remove default padding/margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen background */
+.formContainer {
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.unsplash.com/photo-1523275335684-37898b6baf30");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Simple white form box */
+.form {
+  width: 350px;
+  padding: 25px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Heading */
+.formHeading {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Label */
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs */
+.form input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Input focus */
+.form input:focus {
+  border-color: #6a5acd;
+  outline: none;
+}
+
+/* Button */
+.form-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 18px;
+
+  background: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #5949c1;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+}
