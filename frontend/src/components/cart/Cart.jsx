@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import CartProduct from "../components/cartCard/cartCard"; 
+import CartProduct from "../cartCard/cartCard"; 
 import "./cart.css";
 
 export default function Cart() {
@@ -19,7 +19,6 @@ export default function Cart() {
 
       console.log(res.data);
 
-      // 🔥 Correct mapping of backend response
       setCart(res.data.items || []);
 
     } catch (err) {

@@ -4,7 +4,7 @@ import SignIn from "./components/signInComponent/login";
 import Home from "./components/home/Home";
 import ProtectedRoute from "./components/protectedRoute";
 import ProtectedLayout from "./components/protectedLayout";
-import Cart from "./cart/Cart";
+import Cart from "./components/cart/Cart";
 
 function App() {
   return (
